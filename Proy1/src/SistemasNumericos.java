@@ -1,38 +1,40 @@
 import javax.swing.*;
-import java.sql.SQLOutput;
 
 public class SistemasNumericos {
     public static void main(String[] args) {
 
-        String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un numero entero", "Numero entero", JOptionPane.INFORMATION_MESSAGE);
-        int numeroDecimal=0;
+        String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un número entero");
+        int numeroDecimal = 0;
         try {
             numeroDecimal = Integer.parseInt(numeroStr);
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Error debe ingresar un numero entero", "Error numero entero", JOptionPane.ERROR_MESSAGE);
+        } catch (NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Error debe ingresar un número entero");
             main(args);
             System.exit(0);
         }
 
-
         System.out.println("numeroDecimal = " + numeroDecimal);
-        System.out.println("numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal));
 
-        int numeroBinario = 0b111110100;
+        String resultadoBinario = "numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
+        System.out.println(resultadoBinario);
+
+        int numeroBinario = 0b11110;
         System.out.println("numeroBinario = " + numeroBinario);
-        System.out.println("numero octal de " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal));
 
-        int numeroOctal = 0764;
+        String resultadoOctal = "numero octal de " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal);
+        System.out.println(resultadoOctal);
+        int numeroOctal = 036;
         System.out.println("numeroOctal = " + numeroOctal);
-        System.out.println("numero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal));
 
-        int numeroHexadecimal = 0x1f4;
-        System.out.println("numeroHexadecimal = " + numeroHexadecimal);
+        String resultadoHex = "numero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
+        System.out.println(resultadoHex);
+        int numeroHex = 0x1e;
+        System.out.println("numeroHex = " + numeroHex);
 
-        String mensaje = "numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
-        mensaje += "\nnumero octal de " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal);
-        mensaje += "\nnumero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
-        JOptionPane.showMessageDialog(null, mensaje, "Conversiones", JOptionPane.INFORMATION_MESSAGE);
+        String mensaje = resultadoBinario;
+        mensaje += "\n" + resultadoOctal;
+        mensaje += "\n" + resultadoHex;
 
+        JOptionPane.showMessageDialog(null, mensaje);
     }
 }
