@@ -1,3 +1,5 @@
+package Sec3Strings;
+
 import javax.swing.*;
 
 public class SistemasNumericos {

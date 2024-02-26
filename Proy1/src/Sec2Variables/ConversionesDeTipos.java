@@ -1,3 +1,5 @@
+package Sec2Variables;
+
 public class ConversionesDeTipos {
     public static void main(String[] args) {
         String numeroStr = "50";

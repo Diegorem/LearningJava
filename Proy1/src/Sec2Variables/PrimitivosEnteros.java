@@ -1,3 +1,5 @@
+package Sec2Variables;
+
 public class PrimitivosEnteros {
     public static void main(String[] args) {
 

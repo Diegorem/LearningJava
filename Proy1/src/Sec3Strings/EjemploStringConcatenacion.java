@@ -1,3 +1,5 @@
+package Sec3Strings;
+
 public class EjemploStringConcatenacion {
     public static void main(String[] args) {
         String curso = "Programación Java";

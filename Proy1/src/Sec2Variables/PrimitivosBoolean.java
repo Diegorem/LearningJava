@@ -1,3 +1,5 @@
+package Sec2Variables;
+
 public class PrimitivosBoolean {
     public static void main(String[] args) {
         

@@ -1,3 +1,5 @@
+package Sec3Strings;
+
 public class EjemploStringExtensionArchivo {
     public static void main(String[] args) {
 
